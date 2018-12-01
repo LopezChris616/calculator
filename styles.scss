@@ -1,0 +1,66 @@
+$calculator-width: 430px;
+$calculator-height: 486px;
+$calculator-results-width: 430px;
+$calculator-results-height: 109px;
+$calculator-number-button-width: 101px;
+$calculator-number-button-height: 96px;
+$calculator-symbol-button-width: 126px;
+$calculator-symbol-button-height: 67px;
+$border-color: 1px solid rgba(255, 255, 255, 0.267);
+$text-color: white;
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+button {
+    background-color: #252628;
+    border: $border-color;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: $calculator-width;
+    // height: $calculator-height;
+    background-color: #252628;
+    .calculator-results {
+        width: $calculator-results-width;
+        height: $calculator-results-height;
+        background-color: rgba(0, 0, 0, 0.185);
+        margin-top: 5px;
+    }
+    .calculator-buttons {
+        display: grid;
+        grid-template-columns: 304px 126px;
+        .numbers-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            button {
+                width: $calculator-number-button-width;
+                height: $calculator-number-button-height;
+                font-size: 45px;
+                &:nth-child(10){
+                    width: 201px;
+                }
+            }
+        }
+        .symbols-buttons {
+            button {
+                &:first-child {
+                    background-color: #FF4545;
+                }
+                width: $calculator-symbol-button-width;
+                height: $calculator-symbol-button-height;
+                font-size: 30px;
+            }
+        }
+    }
+}
