@@ -6,7 +6,7 @@ $calculator-number-button-width: 101px;
 $calculator-number-button-height: 96px;
 $calculator-symbol-button-width: 126px;
 $calculator-symbol-button-height: 67px;
-$border-color: 1px solid rgba(255, 255, 255, 0.267);
+$border-color: 1px solid rgba(255, 255, 255, 0.171);
 $text-color: white;
 
 * {
@@ -18,8 +18,8 @@ $text-color: white;
 button {
     background-color: #252628;
     border: $border-color;
-    color: white;
-    font-size: 20px;
+    color: $text-color;
+    font-size: 45px;
     cursor: pointer;
 }
 
@@ -29,12 +29,14 @@ button {
     align-items: center;
     margin: 40px auto;
     width: $calculator-width;
-    // height: $calculator-height;
     background-color: #252628;
     .calculator-results {
         width: $calculator-results-width;
         height: $calculator-results-height;
+        overflow-y: auto;
         background-color: rgba(0, 0, 0, 0.185);
+        color: white;
+        font-size: 55px;
         margin-top: 5px;
     }
     .calculator-buttons {
@@ -46,7 +48,6 @@ button {
             button {
                 width: $calculator-number-button-width;
                 height: $calculator-number-button-height;
-                font-size: 45px;
                 &:nth-child(10){
                     width: 201px;
                 }

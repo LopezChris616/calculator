@@ -6,9 +6,9 @@
 
 button {
   background-color: #252628;
-  border: 1px solid rgba(255, 255, 255, 0.267);
+  border: 1px solid rgba(255, 255, 255, 0.171);
   color: white;
-  font-size: 20px;
+  font-size: 45px;
   cursor: pointer;
 }
 
@@ -23,7 +23,10 @@ button {
 .calculator .calculator-results {
   width: 430px;
   height: 109px;
+  overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.185);
+  color: white;
+  font-size: 55px;
   margin-top: 5px;
 }
 .calculator .calculator-buttons {
@@ -37,7 +40,6 @@ button {
 .calculator .calculator-buttons .numbers-buttons button {
   width: 101px;
   height: 96px;
-  font-size: 45px;
 }
 .calculator .calculator-buttons .numbers-buttons button:nth-child(10) {
   width: 201px;
