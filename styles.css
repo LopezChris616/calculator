@@ -4,12 +4,21 @@
   font-weight: 200;
 }
 
+body {
+  background-color: #b9b9b9;
+}
+
 button {
   background-color: #252628;
   border: 1px solid rgba(255, 255, 255, 0.171);
   color: white;
   font-size: 45px;
   cursor: pointer;
+  transition: background-color 0.3s, border 0.6s;
+}
+button:hover {
+  background-color: #1c1c1d;
+  border: 1px solid #b1b0b0;
 }
 
 .calculator {
@@ -27,7 +36,10 @@ button {
   background-color: rgba(0, 0, 0, 0.185);
   color: white;
   font-size: 55px;
-  margin-top: 5px;
+  text-align: end;
+}
+.calculator .calculator-results h1 {
+  margin-right: 15px;
 }
 .calculator .calculator-buttons {
   display: grid;
